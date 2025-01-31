@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row class="firstRow">
-    <div class="mr-10 titel-scrollbar">
+    <div class="mr-10 title-scrollbar">
       <span
         class="headline"
         (click)="openHeaderDialog()"
@@ -16,7 +16,7 @@
       title="Edit title and description"
     >
       <span class="material-icons-outlined materialIconButton"> edit </span>
-      <div class="button-label">Title</div>
+      <div class="button-label">Edit Title</div>
     </button>
     @if (showDescription | async) {
       <button
@@ -27,7 +27,7 @@
         <span class="material-icons-outlined materialIconButton">
           visibility_off
         </span>
-        <div class="button-label">Description</div>
+        <div class="button-label">Hide Description</div>
       </button>
     }
     @if (!(showDescription | async)) {
@@ -39,7 +39,7 @@
         <span class="material-icons-outlined materialIconButton">
           visibility
         </span>
-        <div class="button-label">Description</div>
+        <div class="button-label">Show Description</div>
       </button>
     }
     <span class="titleSpacer"></span>

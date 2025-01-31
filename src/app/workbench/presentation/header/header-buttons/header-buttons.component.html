@@ -26,17 +26,17 @@
       <div class="button-label">Import from file</div>
     </button>
 
-    <button
-      id="buttonUrlImport"
-      class="headerButton"
-      title="Import story from URL"
-      (click)="openImportFromUrlDialog.emit()"
-    >
-      <span class="material-icons-outlined materialIconButton">
-        cloud_upload
-      </span>
-      <div class="button-label">Import from URL</div>
-    </button>
+<!--    <button-->
+<!--      id="buttonUrlImport"-->
+<!--      class="headerButton"-->
+<!--      title="Import story from URL"-->
+<!--      (click)="openImportFromUrlDialog.emit()"-->
+<!--    >-->
+<!--      <span class="material-icons-outlined materialIconButton">-->
+<!--        cloud_upload-->
+<!--      </span>-->
+<!--      <div class="button-label">Import from URL</div>-->
+<!--    </button>-->
 
     <input
       type="file"
@@ -46,20 +46,6 @@
       onclick="this.value=null;"
       (change)="import.emit()"
     />
-    <button
-      [disabled]="!hasDomainStory && !hasTitle"
-      [class.disabled]="!hasDomainStory && !hasTitle"
-      class="headerButton"
-      [class.dirty]="isDirty"
-      id="export"
-      title="Export story as .egn, .svg or .png file"
-      (click)="openDownloadDialog.emit()"
-    >
-      <span class="material-icons-outlined materialIconButton">
-        file_download
-      </span>
-      <div class="button-label">Export</div>
-    </button>
     <button
       [disabled]="!hasDomainStory"
       [class.disabled]="!hasDomainStory"
@@ -73,14 +59,14 @@
       <div class="button-label">Dictionary</div>
     </button>
 
-    <button
-      class="headerButton"
-      title="Create a new domain story"
-      (click)="newStory.emit()"
-    >
-      <span class="material-icons-outlined materialIconButton"> note_add </span>
-      <div class="button-label">New story</div>
-    </button>
+<!--    <button-->
+<!--      class="headerButton"-->
+<!--      title="Create a new domain story"-->
+<!--      (click)="newStory.emit()"-->
+<!--    >-->
+<!--      <span class="material-icons-outlined materialIconButton"> note_add </span>-->
+<!--      <div class="button-label">New story</div>-->
+<!--    </button>-->
 
     <button class="headerButton" title="Settings" (click)="openSettings.emit()">
       <span
@@ -99,6 +85,20 @@
     >
       <span class="material-icons-outlined materialIconButton"> keyboard </span>
       <div class="button-label">Shortcuts</div>
+    </button>
+    <button
+      [disabled]="!hasDomainStory && !hasTitle"
+      [class.disabled]="!hasDomainStory && !hasTitle"
+      class="headerButton"
+      [class.dirty]="isDirty"
+      id="export"
+      title="Save the latest changes"
+      (click)="openDownloadDialog.emit()"
+    >
+      <span class="material-icons materialIconButton">
+        save
+      </span>
+      <div class="button-label">Save</div>
     </button>
   </div>
 }
