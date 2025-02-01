@@ -49,4 +49,11 @@
   overflow: auto;
   scrollbar-width: none;
   max-width: 100rem;
+  transition: transform .2s; /* Animation */
+
+}
+
+.title-scrollbar:hover {
+  color: var(--on-hover-color);
+  transform: scale(1.1);
 }

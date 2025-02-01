@@ -12,6 +12,7 @@
 
 :root {
   --borderGray10: #e8e9ed;
+  --on-hover-color: #0093ac;
 }
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
@@ -142,7 +143,7 @@ body {
 }
 
 .headerButton:hover {
-  color: #0093ac;
+  color: var(--on-hover-color);
   cursor: pointer;
 }
 
