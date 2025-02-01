@@ -441,6 +441,7 @@ g.djs-bendpoint.djs-dragging.bendpoint-dragging > * {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
+  cursor: pointer;
 }
 
 .djs-minimap:not(.open) {
